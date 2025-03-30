@@ -1,0 +1,68 @@
+:root {
+  /* Primary Colors */
+  --cai-yellow: #FFD700;
+  --cai-green: #228B22;
+  
+  /* Gradients */
+  --cai-gradient: linear-gradient(135deg, var(--cai-yellow) 0%, var(--cai-green) 100%);
+  --cai-gradient-reverse: linear-gradient(135deg, var(--cai-green) 0%, var(--cai-yellow) 100%);
+  
+  /* Text Colors */
+  --text-on-yellow: #1a1a1a;
+  --text-on-green: #ffffff;
+  
+  /* Component Colors */
+  --primary-bg: var(--cai-yellow);
+  --secondary-bg: var(--cai-green);
+  --accent-bg: var(--cai-gradient);
+}
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.cai-header {
+  background: var(--cai-gradient);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cai-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cai-logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cai-button {
+  background: var(--cai-gradient);
+  color: var(--text-on-yellow);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cai-button:hover {
+  background: var(--cai-gradient-reverse);
+  transform: translateY(-2px);
+}
+
+.cai-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-top: 4px solid var(--cai-yellow);
+  border-bottom: 4px solid var(--cai-green);
+}
